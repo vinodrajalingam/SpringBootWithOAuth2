@@ -1,0 +1,5 @@
+applications:
+- name: springbootldap
+path: target/SpringBootV2.jar
+domain: cfapps.io
+instances: 1

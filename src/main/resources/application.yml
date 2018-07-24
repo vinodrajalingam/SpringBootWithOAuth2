@@ -1,0 +1,60 @@
+google:
+   client:
+    clientId: 1096108000475-juudfg9s8i5rn88ko4mo45fessqs0k00.apps.googleusercontent.com
+    clientSecret: g30aYHh-fy_nHPtXClsHoOzt
+    accessTokenUri: https://www.googleapis.com/oauth2/v4/token
+    userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
+    tokenName: oauth_token
+    authenticationScheme: form
+    clientAuthenticationScheme: form
+    #preEstablishedRedirectUri: http://localhost:8080/gAuth
+    scope: 
+      - openid
+      - email
+      - profile
+    
+   resource: 
+    userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
+    preferTokenInfo: true
+
+facebook:
+   client:
+    clientId: 235159303758139
+    clientSecret: fd068eac1449e577f369109e58e61a1b
+    accessTokenUri: https://graph.facebook.com/oauth/access_token
+    userAuthorizationUri: https://www.facebook.com/dialog/oauth
+    tokenName: oauth_token
+    authenticationScheme: form
+    clientAuthenticationScheme: form
+    #registered-redirect-uri: https://localhost:8080/fAuth   
+   resource:
+    userInfoUri: https://graph.facebook.com/me
+    
+gitHub:
+   client:
+    clientId: bca7816079b9a98df7d2
+    clientSecret: 032e3efd8e979c13db0fa93ca80a065c3eb7a147
+    accessTokenUri: https://github.com/login/oauth/access_token
+    userAuthorizationUri: https://github.com/login/oauth/authorize
+    clientAuthenticationScheme: form
+   resource:
+    userInfoUri: https://api.github.com/user
+     
+twitter:
+   client:
+    clientId: oXJIDGVdB0PDnMICDwKckyzKm
+    clientSecret: Z4BpN51kNsb2wbEfzDXm40v38W3I2P1u4H6fvfM6HQraVfry5j
+    accessTokenUri: https://api.twitter.com/oauth/access_token
+    userAuthorizationUri: https://api.twitter.com/oauth/authorize
+    clientAuthenticationScheme: form
+   resource:
+    userInfoUri: https://api.twitter.com/1.1/users/show.json
+
+linkedIn:
+  client:
+    clientId: 819nafpvzhvs7g
+    clientSecret: ZVZzKsjAWjUsFCxw
+    accessTokenUri: https://www.linkedin.com/oauth/v2/accessToken
+    userAuthorizationUri: https://www.linkedin.com/oauth/v2/authorization
+  resource:
+    userInfoUri: https://api.linkedin.com/v1/people/~?format=json

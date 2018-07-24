@@ -1,0 +1,92 @@
+{"properties": [
+  {
+    "name": "security.oauth2.google.client.client-id",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.google.client.client-id'"
+  },
+  {
+    "name": "security.oauth2.facebook.client.client-id",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.facebook.client.client-id'"
+  },
+  {
+    "name": "security.oauth2.google.client.client-secret",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.google.client.client-secret'"
+  },
+  {
+    "name": "security.oauth2.google.client.access-token-uri",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.google.client.access-token-uri'"
+  },
+  {
+    "name": "security.oauth2.google.client.user-authorization-uri",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.google.client.user-authorization-uri'"
+  },
+  {
+    "name": "security.oauth2.google.client.token-name",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.google.client.token-name'"
+  },
+  {
+    "name": "security.oauth2.google.client.authentication-scheme",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.google.client.authentication-scheme'"
+  },
+  {
+    "name": "security.oauth2.google.client.client-authentication-scheme",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.google.client.client-authentication-scheme'"
+  },
+  {
+    "name": "security.oauth2.google.client.scope",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.google.client.scope'"
+  },
+  {
+    "name": "security.oauth2.google.resource.user-info-uri",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.google.resource.user-info-uri'"
+  },
+  {
+    "name": "security.oauth2.google.resource.prefer-token-info",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.google.resource.prefer-token-info'"
+  },
+  {
+    "name": "security.oauth2.facebook.client.client-secret",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.facebook.client.client-secret'"
+  },
+  {
+    "name": "security.oauth2.facebook.client.user-authorization-uri",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.facebook.client.user-authorization-uri'"
+  },
+  {
+    "name": "security.oauth2.facebook.client.token-name",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.facebook.client.token-name'"
+  },
+  {
+    "name": "security.oauth2.facebook.client.access-token-uri",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.facebook.client.access-token-uri'"
+  },
+  {
+    "name": "security.oauth2.facebook.client.authentication-scheme",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.facebook.client.authentication-scheme'"
+  },
+  {
+    "name": "security.oauth2.facebook.client.client-authentication-scheme",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.facebook.client.client-authentication-scheme'"
+  },
+  {
+    "name": "security.oauth2.facebook.resource.user-info-uri",
+    "type": "java.lang.String",
+    "description": "A description for 'security.oauth2.facebook.resource.user-info-uri'"
+  }
+]}
