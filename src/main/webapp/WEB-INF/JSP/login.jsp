@@ -60,7 +60,7 @@
 
 			<div class="row omb_row-sm-offset-3">
 				<div class="col-xs-12 col-sm-6">
-					<form class="omb_loginForm" action="/inputLogin" method="POST">
+					<form class="omb_loginForm" action="/login" method="POST">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user"></i></span>
 							<input type="text" class="form-control" name="username"
@@ -73,9 +73,10 @@
 							<input type="password" class="form-control" name="password"
 								placeholder="Enter Password">
 						</div>
-						<span class="help-block" style="display: none">Password
-							error</span> <span class="help-block"></span>
-
+						<c:if test="${not empty SPRING_SECURITY_LAST_EXCEPTION}">
+						<span class="help-block" ><c:out value="${SPRING_SECURITY_LAST_EXCEPTION.message}"/></span> 					
+						</c:if>
+						<span class="help-block"></span>
 						<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
 					</form>
 				</div>
@@ -141,12 +142,12 @@
 	</div>
 	
 	<div class="collapse navbar-collapse button-menu">
-		<ul class="nav navbar-nav ">
+		<!-- <ul class="nav navbar-nav ">
             <li><a href="#"><i class="fa fa-home"></i> HOME</a></li>
             <li><a href="#">BILLER</a></li>
             <li><a href="#">USERS</a></li>
             <li><a href="#">OFFICES</a></li>
-		</ul>
+		</ul> -->
         
         <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -177,7 +178,7 @@
                             </div>
                         </li>
                         <li class="divider"></li>
-                        <li>
+                        <!-- <li>
                             <div class="navbar-login navbar-login-session">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -188,7 +189,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
             </ul>   

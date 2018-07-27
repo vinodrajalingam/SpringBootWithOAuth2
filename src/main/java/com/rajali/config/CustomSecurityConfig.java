@@ -22,23 +22,30 @@ public class CustomSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		logger.info("Inside CustomSecurityConfig -> Config");
 
-		http
-        	.logout()
-            .logoutUrl("/j_spring_security_logout")
-            .logoutSuccessUrl("/exit")
-            .deleteCookies("BootV2Cookie")
-            .invalidateHttpSession(true)
-            .and()
-            .authorizeRequests()
-            .antMatchers(
-                    "/",
-                    "/login",
-                    "/logout"
-            ).permitAll()
-            .antMatchers("/gAuth","/fAuth","/gitAuth")
-            .hasRole("USER")
-            .and()
-            .addFilterAfter(customFilter.ssoFilter(), BasicAuthenticationFilter.class).csrf().disable();
+		http.authorizeRequests()
+	        .antMatchers("/anonymous*").anonymous()
+	        .antMatchers("/CSS/**", "/JS/**","/userSignUP").permitAll()          
+	        .anyRequest().authenticated()
+         
+	        .and()
+	        .formLogin()
+	        .loginPage("/login").usernameParameter("username").passwordParameter("password")
+	        .permitAll()
+         
+	        .and()
+	        .logout().logoutUrl("/j_spring_security_logout")
+	        .logoutSuccessUrl("/exit").deleteCookies("BootV2Cookie")
+	        .permitAll()
+        
+	        //.and()
+	        //.rememberMe().key("uniqueAndSecret")
+        
+	        .and().csrf().disable();
+		
+		http.authorizeRequests().antMatchers("/gAuth","/fAuth","/gitAuth")
+        	.hasRole("USER")
+        	.and()
+        	.addFilterAfter(customFilter.ssoFilter(), BasicAuthenticationFilter.class);
 	}
 
 	@Override

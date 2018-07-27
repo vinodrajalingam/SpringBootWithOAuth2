@@ -58,3 +58,12 @@ linkedIn:
     userAuthorizationUri: https://www.linkedin.com/oauth/v2/authorization
   resource:
     userInfoUri: https://api.linkedin.com/v1/people/~?format=json
+    
+#server:
+  ssl:
+    key-alias: selfsigned_localhost_sslserver
+    key-password: changeit
+    key-store: classpath:ssl-server.jks
+    key-store-provider: SUN
+    key-store-type: JKS
+  port: 8080

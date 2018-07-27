@@ -10,14 +10,8 @@ public class CustomWebMVC extends WebMvcConfigurerAdapter {
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		
-		registry.addViewController("/").
-				 setViewName("login");
-		
-		registry.addViewController("/userSignUP").
-		 setViewName("userSignUp");
-		
-		/*registry.addViewController("/logout").
-		 setViewName("login");*/
+		registry.addViewController("/").setViewName("login");
+		registry.addViewController("/userSignUP").setViewName("userSignUp");
+		registry.addViewController("/login").setViewName("login");
 	}
-
 }
